@@ -65,31 +65,27 @@ public class TV {
 		numTV = num;
 	}
 	public void canalUp() {    
-		for(int i = 0; i<getCanal(); i++) {
-			if(this.canal < getCanal() && this.canal <= 120 && getEstado() == true) {
-				this.canal ++;
-			}
+		if(this.canal <= 120 && getEstado() == true) {
+			this.canal ++;
 		}
+		setCanal(this.canal);
 	}
-	public void canalDown() {   
-		for(int i = 0; i<getCanal(); i++) {
-			if(this.canal > getCanal() && this.canal <= 120 && getEstado() == true) {
-				this.canal --;
+	public void canalDown() {
+		if(this.canal <= 120 && getEstado() == true) {
+			this.canal --;
 			}
-		}
+		setCanal(this.canal);
 	}
 	public void volumenUp() {
-		for(int i = 0; i<getVolumen(); i++) {
-			if(this.volumen < getVolumen() && this.volumen <= 7 && getEstado() == true) {
-				this.volumen ++;
-			}
+		if(this.volumen <= 7 && getEstado() == true) {
+			this.volumen ++;
 		}
+		setVolumen(this.volumen);
 	}
 	public void volumenDown() {
-		for(int i = 0; i<getVolumen(); i++) {
-			if(this.volumen > getVolumen() && this.volumen >= 7 && getEstado() == true) {
-				this.volumen --;
-			}
+		if(this.volumen >= 7 && getEstado() == true) {
+			this.volumen --;
 		}
+		setVolumen(this.volumen);
 	}
 }
