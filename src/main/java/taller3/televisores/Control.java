@@ -5,7 +5,7 @@ public class Control {
 	
 	public void enlazar(TV tele) {
 		tv = tele;      //se "enlaza" el tv de control con el tv de TV, en el TestTv tenemos control1.enlazar(tv1) donde tv1 es de tipo TV (clase)
-		tv.setControl(this);    //this sería el control
+		tv.setControl(this);    
 	}
 	
 	public void turnOn() {
@@ -33,6 +33,6 @@ public class Control {
 		this.tv = tv;
 	}
 	public TV getTV() {
-		return tv;
+		return this.tv;
 	}
 }
