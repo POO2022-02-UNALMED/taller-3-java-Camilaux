@@ -61,8 +61,8 @@ public class TV {
 	public int getNumTV() {
 		return numTV;
 	}
-	public void setNumTV(int numTV) {
-		this.numTV = numTV;
+	public static void setNumTV(int num) {
+		numTV = num;
 	}
 	public void canalUp() {    
 		for(int i = 0; i<canal; i++) {
