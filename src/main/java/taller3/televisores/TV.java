@@ -65,25 +65,25 @@ public class TV {
 		numTV = num;
 	}
 	public void canalUp() {    
-		if(this.canal <= 120 && getEstado() == true) {
+		if(getCanal() < 120 && getEstado() == true) {
 			this.canal ++;
 		}
 		setCanal(this.canal);
 	}
 	public void canalDown() {
-		if(this.canal <= 120 && getEstado() == true) {
+		if(getCanal() <= 120 && getEstado() == true) {
 			this.canal --;
 			}
 		setCanal(this.canal);
 	}
 	public void volumenUp() {
-		if(this.volumen <= 7 && getEstado() == true) {
+		if(getVolumen() < 7 && getEstado() == true) {
 			this.volumen ++;
 		}
 		setVolumen(this.volumen);
 	}
 	public void volumenDown() {
-		if(this.volumen >= 7 && getEstado() == true) {
+		if(getVolumen() <= 7 && getEstado() == true) {
 			this.volumen --;
 		}
 		setVolumen(this.volumen);
