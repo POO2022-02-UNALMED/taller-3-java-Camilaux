@@ -61,6 +61,9 @@ public class TV {
 	public int getNumTV() {
 		return numTV;
 	}
+	public void setNumTV(int numTV) {
+		this.numTV = numTV;
+	}
 	public void canalUp() {    
 		for(int i = 0; i<canal; i++) {
 			if(this.canal < canal && this.canal <= 120 && getEstado() == true) {
