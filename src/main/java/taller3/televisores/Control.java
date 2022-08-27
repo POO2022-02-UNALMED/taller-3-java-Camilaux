@@ -4,7 +4,7 @@ public class Control {
 	private TV tv;
 	
 	public void enlazar(TV tele) {
-		tv = tele;      //se "enlaza" el tv de control con el tv de TV, en el TestTv tenemos control1.enlazar(tv1) donde tv1 es de tipo TV (clase)
+		tv = tele;      
 		tv.setControl(this);    
 	}
 	
@@ -29,10 +29,10 @@ public class Control {
 	public void setCanal(int canal) {
 		this.tv.setCanal(canal);
 	}
-	public void setTV(TV tv) {
+	public void setTv(TV tv) {
 		this.tv = tv;
 	}
-	public TV getTV() {
+	public TV getTv() {
 		return this.tv;
 	}
 }
