@@ -34,7 +34,7 @@ public class TV {
 		return precio;
 	}
 	public void setVolumen(int volumen) {
-		if(estado == true && volumen >= 1 && volumen <= 120) {
+		if(estado == true && volumen >= 1 && volumen <= 7) {
 			this.volumen = volumen;
 		}
 	}
